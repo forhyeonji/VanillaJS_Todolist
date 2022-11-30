@@ -1,5 +1,11 @@
 body{
+    margin: 0;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .hidden {
@@ -16,4 +22,8 @@ body{
     bottom:0px;
     z-index: -1;
     opacity:40%;  
+}
+
+.quote span{
+    display: block;
 }

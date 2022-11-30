@@ -1,5 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const todoForm = document.querySelector("#todo-form")
 
 const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
@@ -19,6 +20,8 @@ function onLoginSubmit(e){
 function paintGreetings(username){
     greeting.innerHTML = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    todoForm.classList.remove(HIDDEN_CLASSNAME);
+
 }
 
 // function handleLinkClick(e){
